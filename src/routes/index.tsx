@@ -1,0 +1,189 @@
+export default function Home() {
+  return (
+    <>
+      
+      <header class="site-header">
+        <div class="container-page nav-wrap">
+          <a class="brand" href="#"><span class="avatar bg-gold text-deep-navy">D</span><span><span class="brand-name">DUC IN ALTUM</span><span class="brand-type">Design system</span></span></a>
+          <nav class="nav-links max-md:hidden">
+            <a href="#tokens">Tokens</a><a href="#type">Type</a><a href="#buttons">Buttons</a><a href="#surfaces">Surfaces</a><a href="#forms">Forms</a><a href="#dashboard">Dashboard</a>
+            <a class="btn btn-primary btn-sm" href="https://github.com/BootlegYouki/duc-in-altum-design-system/blob/main/src/dia.css">dia.css</a>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="page-hero">
+        <div class="container-page">
+          <p class="eyebrow">Design system</p>
+          <h1>One look for every <span class="text-sunrise-gold">Duc in Altum</span> site.</h1>
+          <p>Tailwind v4 theme plus component classes lifted from the foundation website. Drop <code>dia.css</code> into any new site or dashboard and it belongs to the same family.</p>
+        </div>
+      </section>
+      
+      <main class="container-page">
+      
+      <section class="section-sm" id="tokens">
+        <div class="section-head"><p class="eyebrow">Tokens</p><h2>Color</h2><p class="lead">Utilities read <code>bg-navy</code>, <code>text-gold</code>, <code>border-sand</code>, and so on.</p></div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+          <div><div class="h-16 rounded-md bg-navy"></div><small class="font-bold">navy</small><br /><small class="text-muted">#112C54</small></div>
+          <div><div class="h-16 rounded-md bg-deep-navy"></div><small class="font-bold">deep-navy</small><br /><small class="text-muted">#0A1B34</small></div>
+          <div><div class="h-16 rounded-md bg-night"></div><small class="font-bold">night</small><br /><small class="text-muted">#071426</small></div>
+          <div><div class="h-16 rounded-md bg-gold"></div><small class="font-bold">gold</small><br /><small class="text-muted">#C49A3A</small></div>
+          <div><div class="h-16 rounded-md bg-sunrise-gold"></div><small class="font-bold">sunrise-gold</small><br /><small class="text-muted">#D8AA5A</small></div>
+          <div><div class="h-16 rounded-md bg-bronze"></div><small class="font-bold">bronze</small><br /><small class="text-muted">#8C6B26</small></div>
+          <div><div class="h-16 rounded-md bg-slate"></div><small class="font-bold">slate</small><br /><small class="text-muted">#334A68</small></div>
+          <div><div class="h-16 rounded-md bg-ink"></div><small class="font-bold">ink</small><br /><small class="text-muted">#142033</small></div>
+          <div><div class="h-16 rounded-md bg-muted"></div><small class="font-bold">muted</small><br /><small class="text-muted">#607086</small></div>
+          <div><div class="h-16 rounded-md bg-line"></div><small class="font-bold">line</small><br /><small class="text-muted">#C8D0DA</small></div>
+          <div><div class="h-16 rounded-md bg-sand"></div><small class="font-bold">sand</small><br /><small class="text-muted">#EBE1D3</small></div>
+          <div><div class="h-16 rounded-md bg-ivory border border-sand"></div><small class="font-bold">ivory</small><br /><small class="text-muted">#F8F5EF</small></div>
+          <div><div class="h-16 rounded-md bg-success"></div><small class="font-bold">success</small><br /><small class="text-muted">#2E6B54</small></div>
+          <div><div class="h-16 rounded-md bg-danger"></div><small class="font-bold">danger</small><br /><small class="text-muted">#8A3C3C</small></div>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-4 mt-8">
+          <div class="card-flat"><strong>Radius</strong><div class="flex gap-3 mt-3"><div class="w-12 h-12 bg-sand rounded-sm"></div><div class="w-12 h-12 bg-sand rounded-md"></div><div class="w-12 h-12 bg-sand rounded-lg"></div><div class="w-12 h-12 bg-sand rounded-xl"></div><div class="w-12 h-12 bg-sand rounded-full"></div></div><small class="text-muted">sm 8 · md 12 · lg 18 · xl 24 · full</small></div>
+          <div class="card-flat"><strong>Shadow</strong><div class="flex gap-4 mt-3"><div class="w-16 h-12 bg-white rounded-md shadow-dia-sm"></div><div class="w-16 h-12 bg-white rounded-md shadow-dia"></div><div class="w-16 h-12 bg-gold rounded-md shadow-gold"></div></div><small class="text-muted">shadow-dia-sm · shadow-dia · shadow-gold</small></div>
+          <div class="card-flat"><strong>Fonts</strong><p class="font-serif text-2xl m-0 mt-2">Georgia for headings</p><p class="m-0">Inter for everything else</p><small class="text-muted">font-serif · font-sans</small></div>
+        </div>
+      </section>
+      
+      <section class="section-sm" id="type">
+        <p class="eyebrow">Typography</p>
+        <h1>Heading one</h1>
+        <h2>Heading two</h2>
+        <h3>Heading three</h3>
+        <p class="lead">Lead paragraph, slate, up to 760px wide.</p>
+        <p>Body copy at 1.65 line height. <a href="#">Inline link</a>. <span class="text-muted">Muted text.</span> <span class="text-gold font-extrabold">Gold accent.</span></p>
+        <div class="quote-card">"Does this young man have the potential to lead, serve, and create a positive impact?"</div>
+      </section>
+      
+      <section class="section-sm" id="buttons">
+        <p class="eyebrow">Buttons</p>
+        <div class="flex flex-wrap gap-3 items-center">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-outline">Outline</button>
+          <button class="btn btn-navy">Navy</button>
+          <button class="btn btn-ghost">Ghost</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-primary btn-sm">Small</button>
+          <button class="btn btn-outline btn-icon" aria-label="Add">+</button>
+          <button class="btn btn-primary" disabled>Disabled</button>
+        </div>
+        <div class="dark-section rounded-lg p-6 mt-4 flex flex-wrap gap-3"><button class="btn btn-primary">Primary on dark</button><button class="btn btn-secondary">Secondary on dark</button></div>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="badge">Default</span><span class="badge badge-gold">Pending</span><span class="badge badge-success">Approved</span><span class="badge badge-danger">Rejected</span><span class="badge badge-muted">Draft</span><span class="badge badge-navy">Scholar</span>
+        </div>
+      </section>
+      
+      <section class="section-sm" id="surfaces">
+        <p class="eyebrow">Surfaces</p>
+        <div class="grid md:grid-cols-3 gap-5">
+          <article class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 5l9 5.5-9 5.5-9-5.5Z"/><path d="M7 13.2V18c3 2 7 2 10 0v-4.8"/></svg></div><h3>Card</h3><p>Elevated white card with icon tile.</p></article>
+          <article class="card-flat"><div class="icon">01</div><h3>Card flat</h3><p class="text-muted">Sand border, no shadow.</p></article>
+          <div class="dark-section rounded-lg p-5"><article class="card-dark"><h3>Card dark</h3><p>Glass tile for navy sections.</p></article></div>
+        </div>
+        <div class="criteria-item mt-5"><span>01</span><div><strong>Numbered item</strong><small>Initiative, responsibility, sound judgment, and positive influence.</small></div></div>
+        <div class="notice">Default notice with gold rule.</div>
+        <div class="notice notice-success">Success notice.</div>
+        <div class="notice notice-warning">Warning notice.</div>
+        <div class="notice notice-danger">Danger notice.</div>
+        <div class="faq">
+          <div class="faq-item open"><button class="faq-button" aria-expanded="true"><span>Accordion item</span><span>−</span></button><div class="faq-answer"><p>Toggle the <code>open</code> class on <code>.faq-item</code>.</p></div></div>
+          <div class="faq-item"><button class="faq-button" aria-expanded="false"><span>Closed item</span><span>+</span></button><div class="faq-answer"><p>Hidden.</p></div></div>
+        </div>
+      </section>
+      
+      <section class="section-sm" id="forms">
+        <p class="eyebrow">Forms</p>
+        <form class="form-card max-w-3xl" onsubmit="return false">
+          <div class="form-note">Form note sits above the fields.</div>
+          <div class="form-grid">
+            <div class="field"><label for="n">Name</label><input id="n" placeholder="Juan Dela Cruz" /><span class="hint">Hint text</span></div>
+            <div class="field"><label for="e">Email</label><input id="e" aria-invalid="true" value="not-an-email" /><span class="error">Enter a valid email</span></div>
+            <div class="field"><label for="s">Community</label><select id="s"><option>Bukidnon</option><option>Davao City</option></select></div>
+            <div class="field"><label for="d">Disabled</label><input id="d" disabled value="Read only" /></div>
+            <div class="field full"><label for="m">Message</label><textarea id="m"></textarea></div>
+            <div class="field full"><label class="check"><input type="checkbox" checked /> I agree to the data policy</label></div>
+            <div class="field full flex gap-3"><button class="btn btn-primary">Submit</button><button class="btn btn-ghost" type="button">Cancel</button></div>
+          </div>
+        </form>
+      </section>
+      
+      </main>
+      
+      <section class="section-sm" id="dashboard">
+        <div class="container-page section-head"><p class="eyebrow">Dashboard</p><h2>App shell</h2><p class="lead">Sidenav, topbar, stat tiles, panels, tabs, tables. Everything below uses <code>.dia-*</code> classes.</p></div>
+        <div class="dia-app border-y border-sand">
+          <nav class="dia-sidenav">
+            <a class="brand" href="#"><span class="avatar bg-gold text-deep-navy">D</span><span><span class="brand-name">DUC IN ALTUM</span><span class="brand-type">Admin</span></span></a>
+            <div class="dia-sidenav-label">Manage</div>
+            <a href="#" aria-current="page"><svg viewBox="0 0 24 24"><path d="M4 5h7v7H4zM13 5h7v4h-7zM13 12h7v7h-7zM4 15h7v4H4z"/></svg>Overview</a>
+            <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.5-5 3.5-7 8-7s7.5 2 8 7"/></svg>Scholars</a>
+            <a href="#"><svg viewBox="0 0 24 24"><path d="M4 7h16v11H4z"/><path d="M8 7V5h8v2M7 13h10"/></svg>Applications</a>
+            <a href="#"><svg viewBox="0 0 24 24"><path d="M12 21s8-4.5 8-11a4.5 4.5 0 0 0-8-3 4.5 4.5 0 0 0-8 3c0 6.5 8 11 8 11Z"/></svg>Donors</a>
+            <div class="dia-sidenav-label">Account</div>
+            <a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Settings</a>
+          </nav>
+          <div class="dia-main">
+            <div class="dia-topbar">
+              <div><div class="dia-crumbs">Admin / Overview</div><h1>Good morning, Maria</h1></div>
+              <div class="flex gap-2 items-center"><button class="btn btn-outline btn-sm">Export</button><button class="btn btn-primary btn-sm">New application</button><span class="avatar">M</span></div>
+            </div>
+            <div class="dia-stats">
+              <div class="dia-stat accent"><div class="label">Active scholars</div><div class="value">42</div><div class="delta">Bukidnon 24 · Davao 18</div></div>
+              <div class="dia-stat"><div class="label">Applications</div><div class="value">128</div><div class="delta up">+16 this week</div></div>
+              <div class="dia-stat"><div class="label">Funds raised</div><div class="value">₱2.4M</div><div class="delta up">+8.2%</div></div>
+              <div class="dia-stat"><div class="label">Pending reviews</div><div class="value">17</div><div class="delta down">3 overdue</div></div>
+            </div>
+            <div class="dia-grid">
+              <div class="dia-panel">
+                <div class="card-head"><h3>Recent applications</h3><button class="btn btn-ghost btn-sm">View all</button></div>
+                <div class="dia-tabs"><button aria-selected="true">All</button><button>Pending</button><button>Approved</button></div>
+                <div class="overflow-x-auto"><table class="table">
+                  <thead><tr><th>Applicant</th><th>Community</th><th>Status</th><th class="num">Score</th></tr></thead>
+                  <tbody>
+                    <tr><td><div class="flex items-center gap-3"><span class="avatar">JR</span><div><strong class="text-navy">Jose Ramos</strong><br /><small class="text-muted">Engineering · 2nd yr</small></div></div></td><td>Bukidnon</td><td><span class="badge badge-success">Approved</span></td><td class="num">88</td></tr>
+                    <tr><td><div class="flex items-center gap-3"><span class="avatar">MS</span><div><strong class="text-navy">Marco Santos</strong><br /><small class="text-muted">Nursing · 1st yr</small></div></div></td><td>Davao City</td><td><span class="badge badge-gold">Pending</span></td><td class="num">74</td></tr>
+                    <tr><td><div class="flex items-center gap-3"><span class="avatar">AT</span><div><strong class="text-navy">Andres Tan</strong><br /><small class="text-muted">Education · 3rd yr</small></div></div></td><td>Bukidnon</td><td><span class="badge badge-danger">Rejected</span></td><td class="num">51</td></tr>
+                  </tbody>
+                </table></div>
+              </div>
+              <div class="grid gap-5 content-start">
+                <div class="dia-panel">
+                  <div class="card-head"><h3>Fund progress</h3><span class="badge badge-gold">Q4</span></div>
+                  <div class="grid gap-4">
+                    <div><div class="flex justify-between text-sm mb-1.5"><strong>General fund</strong><span class="text-muted">72%</span></div><div class="dia-progress"><span style="width:72%"></span></div></div>
+                    <div><div class="flex justify-between text-sm mb-1.5"><strong>Named scholarships</strong><span class="text-muted">45%</span></div><div class="dia-progress"><span style="width:45%"></span></div></div>
+                  </div>
+                </div>
+                <div class="dia-panel">
+                  <div class="card-head"><h3>Mentor sessions</h3></div>
+                  <div class="dia-list">
+                    <div class="dia-list-item"><span class="avatar bg-gold text-deep-navy">L</span><div><strong>Leadership circle</strong><small>Fri · 4 pm · Davao</small></div></div>
+                    <div class="dia-list-item"><span class="avatar">C</span><div><strong>Career prep</strong><small>Sat · 9 am · online</small></div></div>
+                  </div>
+                </div>
+                <div class="dia-panel dia-empty"><div class="icon">!</div><strong class="text-navy block">No alerts</strong><small>Empty state pattern.</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="cta-band"><div class="container-page flex flex-wrap justify-between items-center gap-6"><div><h2>CTA band</h2><p>Gradient navy strip with a primary action.</p></div><a class="btn btn-primary" href="#">Action</a></div></section>
+      
+      <footer class="site-footer">
+        <div class="container-page">
+          <div class="grid md:grid-cols-[1.3fr_.7fr_.7fr] gap-12">
+            <div><strong class="block font-serif text-white text-2xl mb-2">Duc in Altum Foundation</strong><p>Footer brand block.</p></div>
+            <div><div class="footer-title">Explore</div><div class="footer-links"><a href="#">About</a><a href="#">Programs</a></div></div>
+            <div><div class="footer-title">Resources</div><div class="footer-links"><a href="#">Rubric</a><a href="#">Primer</a></div></div>
+          </div>
+          <div class="footer-bottom"><span>© 2026 Duc in Altum Foundation.</span><span>Lead boldly. Learn deeply. Serve generously.</span></div>
+        </div>
+      </footer>
+      
+      <div class="toast show">Toast message</div>
+    </>
+  );
+}
