@@ -23,7 +23,7 @@ jobs:
 
       - name: Install and Build
         env:
-          BASE_PATH: /your-repo-name/ # Replace with your exact repo name (or "/" if user site)
+          BASE_PATH: /duc-in-altum-design/
         run: |
           npm ci
           npm run build
